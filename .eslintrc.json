@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:n/recommended",
+    "eslint:recommended",
+    "next"
+  ],
+  "rules": {
+    "sort-imports": "warn",
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "no-restricted-imports": "warn",
+    "no-unused-vars": "error",
+    "no-unused-labels": "error",
+    "no-duplicate-imports": "error",
+    "no-restricted-modules": "error",
+    "n/no-missing-import": "error"
+  }
+}

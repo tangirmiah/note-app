@@ -1,0 +1,13 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.validate": [
+        "typescript",
+        "javascript",
+        "javascriptreact",
+        "html",
+        "typescriptreact"
+    ]
+}
