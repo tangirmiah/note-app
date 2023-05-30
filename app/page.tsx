@@ -1,7 +1,8 @@
+import { AuthenticationTitle } from "@/components/login";
 export default function Home() {
   return (
-    <main >
-      
+    <main>
+      <AuthenticationTitle />
     </main>
   )
 }
