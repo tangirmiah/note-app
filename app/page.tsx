@@ -1,20 +1,12 @@
 "use client";
-import { AuthenticationTitle } from "@/components/login";
-import { AppShell, Header, Navbar } from "@mantine/core";
+
+import HeaderContainer from "@/components/header";
+import NavbarContainer from "@/components/navbar";
+import { AppShell } from "@mantine/core";
 export default function Home() {
   return (
     <main>
-      <AppShell
-        header={
-          <Header height={90} p="xs">
-            <h2>NoteBook</h2>
-          </Header>
-        }
-        navbar={
-          <Navbar width={{ base: 350 }} height="100vh" p="xs">
-            <AuthenticationTitle />
-          </Navbar>
-        }>
+      <AppShell header={<HeaderContainer />} navbar={<NavbarContainer />}>
         hello
       </AppShell>
     </main>
