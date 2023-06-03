@@ -26,14 +26,17 @@ export function LoginModal() {
             width: "100%",
             padding: theme.spacing.xs,
             borderRadius: theme.radius.sm,
-            color:
-              theme.colorScheme === "dark" ? theme.colors.dark[0] : theme.black,
+            color: theme.white,
 
             "&:hover": {
               backgroundColor:
                 theme.colorScheme === "dark"
                   ? theme.colors.dark[6]
                   : theme.colors.gray[0],
+              color:
+                theme.colorScheme === "dark"
+                  ? theme.colors.dark[0]
+                  : theme.black,
             },
           }}
           onClick={open}>
