@@ -2,6 +2,8 @@ import "./globals.css";
 
 import React from "react";
 import Providers from "@/components/providers";
+import AppShellLayout from "@/components/shellLayout";
+
 
 export const metadata = {
   title: "NoteBook App",
@@ -16,7 +18,9 @@ export default function RootLayout({
   return (
     <Providers>
       <html lang="en">
-        <body>{children}</body>
+        <body>
+          <AppShellLayout>{children}</AppShellLayout>
+        </body>
       </html>
     </Providers>
   );

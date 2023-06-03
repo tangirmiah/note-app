@@ -13,7 +13,9 @@ export function AuthenticationTitle() {
       <Paper radius="md" p="sm" withBorder>
         <GoogleLoginButton onClick={() => signIn("google")} />
         <GithubLoginButton onClick={() => signIn("github")} />
-        <FacebookLoginButton onClick={() => signIn("facebook")} />
+        <FacebookLoginButton onClick={() => signIn("facebook")}>
+          Not working
+        </FacebookLoginButton>
       </Paper>
     </Container>
   );
