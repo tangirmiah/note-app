@@ -1,5 +1,9 @@
 "use client";
 
+import { HeroImageRight } from "@/components/hero";
+import { useSession } from "next-auth/react";
+
 export default function Home() {
-  return <main>content</main>;
+  const { data: session } = useSession();
+  return <main>{!session ? <HeroImageRight /> : null}</main>;
 }

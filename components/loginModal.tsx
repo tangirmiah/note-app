@@ -27,7 +27,6 @@ export function LoginModal() {
             padding: theme.spacing.xs,
             borderRadius: theme.radius.sm,
             color: theme.white,
-
             "&:hover": {
               backgroundColor:
                 theme.colorScheme === "dark"

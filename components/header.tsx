@@ -5,7 +5,7 @@ import {
   Flex,
   Title,
 } from "@mantine/core";
-import { IconSun, IconMoonStars } from "@tabler/icons-react";
+import { IconSun, IconMoonStars, IconNote } from "@tabler/icons-react";
 
 export default function HeaderContainer() {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
@@ -17,13 +17,15 @@ export default function HeaderContainer() {
         gap={{ base: "sm", sm: "lg" }}
         justify={{ md: "space-between" }}
         align={{ base: "sm", sm: "center" }}>
-        <Title>NoteBook</Title>
+        <Title gradient={{ from: "blue", to: "violet" }} variant="gradient">
+          NoteBook {<IconNote size="1.7rem" />}
+        </Title>
         <ActionIcon
           variant="outline"
           color={dark ? "yellow" : "blue"}
           onClick={() => toggleColorScheme()}
           title="Toggle color scheme">
-          {dark ? <IconSun size="1.1rem" /> : <IconMoonStars size="1.1rem" />}
+          {dark ? <IconSun /> : <IconMoonStars />}
         </ActionIcon>
       </Flex>
     </Header>

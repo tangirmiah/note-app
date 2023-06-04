@@ -9,7 +9,7 @@ export default function NavbarContainer() {
     <Navbar p="xs" width={{ base: 300 }}>
       <Navbar.Section>{session ? <UserMenu /> : <LoginModal />}</Navbar.Section>
       <Navbar.Section grow mt="md">
-        <h1>main</h1>
+        {session ? <h1>main</h1> : null}
       </Navbar.Section>
     </Navbar>
   );
